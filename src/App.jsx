@@ -9,9 +9,9 @@ import WeatherApp from './WeatherApp'
 function App() {
  
   return (
-    <>
-   <WeatherApp />
-    </>
+   <div>
+     <WeatherApp />
+   </div>
   )
 }
 
