@@ -25,13 +25,13 @@ export default function Infobox({ imfo }) {
         <CardMedia
           sx={{ height: 140 }}
           image={
-            imfo.humidity > 80 ? <ThunderstormIcon /> : imfo.temp > 20 ? HOT_URL : COLD_URL
+            imfo.humidity > 80 ? RAIN_URL : imfo.temp > 20 ? HOT_URL : COLD_URL
           }
           title="Image"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {imfo.city} {imfo.humidity > 80 ? RAIN_URL : imfo.temp > 20 ? <WbSunnyIcon /> : <AcUnitIcon />}
+            {imfo.city} {imfo.humidity > 80 ? <ThunderstormIcon /> : imfo.temp > 20 ? <WbSunnyIcon /> : <AcUnitIcon />}
           </Typography>
           <Typography
             variant="body2"
